@@ -21,7 +21,7 @@ app.post('/api/chat', async (req, res) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'nvidia/llama-3.1-nemotron-70b-instruct',
+        model: 'nvidia/nemotron-3-ultra-550b-a55b',
         messages: [
           { role: 'system', content: 'Kamu adalah asisten AI yang ramah, ringkas, dan membantu.' },
           { role: 'user', content: message }
